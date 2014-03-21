@@ -2,6 +2,11 @@
 // Script copied and slightly modified from Ocramius
 // http://ocramius.github.io/blog/automated-code-coverage-check-for-github-pull-requests-with-travis/
 
+if (count($argv) < 2) {
+    echo 'usage: spiffy-cc <filename> [coverage]';
+    exit(1);
+}
+
 $inputFile  = $argv[1];
 $percentage = min(100, max(0, (int) isset($argv[2]) ? $argv[2] : 0));
 
