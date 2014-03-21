@@ -1,0 +1,13 @@
+{
+    "name": "spiffy/spiffy-coverage-checker",
+    "authors": [
+        {
+            "name": "Kyle Spraggs",
+            "email": "theman@spiffyjr.me"
+        }
+    ],
+    "require": {
+        "php": ">=5.3"
+    },
+    "bin": ["bin/spiffy-cc"]
+}
